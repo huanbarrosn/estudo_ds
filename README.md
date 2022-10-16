@@ -1,2 +1,2 @@
 # my-data-science-study
-Here I post my studies on data science, I like to study explaining the subject, so when you see the files with the classes you will realize that they are like tutorials.
+Aqui posto meus estudos sobre ciência de dados, gosto de estudar explicando o assunto, então quando você ver os arquivos com as aulas vai perceber que são como tutoriais.
