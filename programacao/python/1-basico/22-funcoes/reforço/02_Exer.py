@@ -18,4 +18,6 @@ def sequencia(b):
         for x in range(i):
             print(x+1, end=' ')
 
+
 sequencia(25)
+print()
