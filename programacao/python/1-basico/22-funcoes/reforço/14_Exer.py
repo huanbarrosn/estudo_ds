@@ -22,7 +22,7 @@ f = 9
 for i in range(9, 1, -1):
     f = f * (i - 1)
 
-a = 'ceerto'
+a = 'certo'
 cont = 1
 
 while True:
