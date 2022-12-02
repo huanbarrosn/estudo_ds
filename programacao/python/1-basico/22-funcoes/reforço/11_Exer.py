@@ -29,4 +29,4 @@ def conversor_data(data):
     return f'{int(dia)} de {mes} de {ano}'
 
 
-print(conversor_data('02/10/2020'))
+print(conversor_data('20/01/2000'))
