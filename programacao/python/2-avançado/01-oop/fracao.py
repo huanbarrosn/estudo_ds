@@ -86,7 +86,6 @@ class Fracao:
         return self.somar(fracao_sub)
 
     def multiplicar(self, *fracao_mul):
-
         # Altera o valor de fração na hora da divisão (só é ultilizado quando o metodo dividir é chamado)
         if type(fracao_mul[0]) == tuple:
             fracao_mul = fracao_mul[0]
@@ -117,13 +116,18 @@ class Fracao:
         x = x.multiplicar(fracao_div)
         return x.inverter()
 
-    def equivalente(self, *fracao_equi):
-        f_equivalentes = []
-        f_base = self.numerador/self.denominador
+    def equivalente(self, fracao_equi):
+        if fracao_equi.numerador/fracao_equi.denominador == self.numerador/self.denominador:
+            return True
+        else:
+            return False
 
-        for f in fracao_equi:
-            if f.numerador/f.denominador == f_base:
-                f_equivalentes.append((f.numerador, f.denominador))
+    def encontrar_equivalente(self, fracoes:list):
+        f_equivalentes = []
+        
+        for f in fracoes:
+            if f.numerador/f.denominador == self.numerador/self.denominador:
+                f_equivalentes.append(f)
 
         return f_equivalentes
 
@@ -135,6 +139,3 @@ if __name__ == '__main__':
     a = Fracao(12, 30)
     b = Fracao(2, 5)
     c = Fracao(2, 3)
-
-    retorno = a.equivalente(b, c)
-    print(retorno)

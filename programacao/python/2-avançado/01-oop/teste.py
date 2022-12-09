@@ -2,17 +2,9 @@ from fracao import Fracao
 import random as rd
 
 
-fracoes = []
-num = rd.sample(range(3), 3)
-den = rd.sample(range(3, 6), 3)
+f1 = Fracao(1, 2)
+f2 = Fracao(1, 2)
 
-for x in range(len(num)):
-    fracoes.append(Fracao(num[x], den[x]))
+f3 = f1.somar(f2)
 
-print(num)
-print(den)
-
-nova = rd.sample(fracoes, 1)[0].multiplicar(rd.sample(fracoes, 1)[0])
-print(nova.numerador, nova.denominador)
-
-
+print(f3.numerador, f3.denominador)
